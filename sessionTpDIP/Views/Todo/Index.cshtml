@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    
+}
+@model List<sessionTpDIP.ViewModels.ListTodoVm>
+
+    <h1>List of todos</h1>
+@foreach(var todo in Model)
+{
+    <div>
+        <h1>@todo.Libelle</h1>
+        <p>@todo.Description</p>
+        <p>@todo.State</p>
+        <p>@todo.DateLimite</p>
+        <a asp-action="Edit" asp-route-id="@todo.Id">Edit</a>
+        <form method="post" asp-action="Delete" asp-route-id="@todo.Id">
+            <button onclick="return confirm('U really wanna delete this todo ?');">Delete</button>
+        </form>
+    </div>
+}
+

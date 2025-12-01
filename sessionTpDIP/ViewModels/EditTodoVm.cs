@@ -1,0 +1,16 @@
+﻿using System.ComponentModel.DataAnnotations;
+using sessionTpDIP.Enums;
+namespace sessionTpDIP.ViewModels
+{
+    public class EditTodoVm
+    {
+        public int Id { get; set; }
+        [Required(ErrorMessage = "The Libelle is required")]
+        public string Libelle { get; set; }
+        [Required(ErrorMessage = "The Description is required")]
+        public string Description { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime DateLimite { get; set; }
+        public State State { get; set; }
+    }
+}
