@@ -11,6 +11,15 @@
     string textColor = (value == "dark") ? "text-light" : "text-dark";
     string theme = (value == "dark") ? "bg-dark" : "bg-light";
 }
+@{
+    // using the Auth filter to get username (show either login or logout)
+    // var username = TempData["username"] as string ?? "notAuthenticated";
+
+    // the filter didnt work properly cuz wen the action doesnt use the auth filter
+    // then even if the user is authenticated it will show login, as temporary fix
+    // we will talk with session directly , (new method that i saw using user.identity will be used in future)
+    var username = Context.Session.GetString("username") ?? "notAuthenticated";
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,9 +50,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Todo" asp-action="index">Todos</a>
                         </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="login">Login</a>
-                        </li>
+                        @if(username == "notAuthenticated")
+                        {
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="login">Login</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <form asp-action="logout" asp-controller="Auth" style="display:flex; align-items:center" method="post">
+                                <button style="border:none; background-color:white;" >Logout</button>
+                            </form>
+                        }
+
                     </ul>
                 </div>
                 <form asp-action="Switch" asp-controller="Theme" method="post" >

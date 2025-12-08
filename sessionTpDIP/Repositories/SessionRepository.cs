@@ -33,6 +33,10 @@ namespace sessionTpDIP.Persisters
         {
             return context.Session.GetString (key);
         }
+        public void removeUsername(HttpContext context , string key)
+        {
+            context.Session.Remove(key);
+        }
         
         
     }

@@ -14,11 +14,16 @@ namespace sessionTpDIP.Filters
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             base.OnActionExecuting(context);
-            if (_IauthService.getUser(context.HttpContext ,"username") == null)
+            var username = _IauthService.getUser(context.HttpContext, "username");
+            if (username == null)
             {
                 //context.HttpContext.Response.Redirect("/auth/login");
                 context.Result = new RedirectResult("/auth/login");
             }
+            //if(context.Controller is Controller controller)
+            //{
+            //    controller.TempData["username"] = username;
+            //}
         }
     }
 }

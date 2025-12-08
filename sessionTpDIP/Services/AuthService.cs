@@ -29,5 +29,9 @@ namespace sessionTpDIP.Services
         {
            return _sessionRepository.GetUsername(context, key);
         }
+        public void logout(HttpContext context)
+        {
+            _sessionRepository.removeUsername(context, "username");
+        }
     }
 }

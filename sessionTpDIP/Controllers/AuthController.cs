@@ -30,5 +30,11 @@ namespace sessionTpDIP.Controllers
             }
             return View();
         }
+        
+        public IActionResult logout()
+        {
+            _authService.logout(HttpContext);
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
