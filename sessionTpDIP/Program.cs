@@ -19,6 +19,7 @@ builder.Services.AddScoped<UserMapper>();
 builder.Services.AddControllersWithViews(options =>
 {
     options.Filters.Add(typeof(ThemeFilter));
+    options.Filters.Add(typeof(LogsFilter));
 });
 
 var app = builder.Build();

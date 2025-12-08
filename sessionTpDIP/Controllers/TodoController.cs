@@ -7,7 +7,7 @@ using sessionTpDIP.ViewModels;
 namespace sessionTpDIP.Controllers
 {
 
-    [AuthFilter]
+    [TypeFilter(typeof(AuthFilter))]
     public class TodoController : Controller
     {
         private ITodoService _ITodoService;

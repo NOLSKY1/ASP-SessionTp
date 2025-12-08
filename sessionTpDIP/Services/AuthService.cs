@@ -25,5 +25,9 @@ namespace sessionTpDIP.Services
             }
             return false;
         }
+        public string getUser(HttpContext context ,string key)
+        {
+           return _sessionRepository.GetUsername(context, key);
+        }
     }
 }

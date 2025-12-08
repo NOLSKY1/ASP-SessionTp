@@ -29,6 +29,10 @@ namespace sessionTpDIP.Persisters
         {
             context.Session.SetString(key, user.Username );
         }
+        public string GetUsername(HttpContext context , string key)
+        {
+            return context.Session.GetString (key);
+        }
         
         
     }
