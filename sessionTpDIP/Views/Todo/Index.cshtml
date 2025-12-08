@@ -2,22 +2,24 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    
+    DateTime currentDate = DateTime.Today;
 }
 @model List<sessionTpDIP.ViewModels.ListTodoVm>
-
+@using sessionTpDIP.Enums
     <h1>List of todos</h1>
     <a asp-action="create">Create a todo</a>
 @foreach(var todo in Model)
 {
-    <div>
+
+    <div class="@(todo.DateLimite <= currentDate ? "text-danger" : "") @(todo.State == State.Done ? "text-decoration-line-through" : "") ">
         <h1>@todo.Libelle</h1>
         <p>@todo.Description</p>
         <p>@todo.State</p>
         <p>@todo.DateLimite</p>
-        <a asp-action="Edit" asp-route-id="@todo.Id">Edit</a>
+        <button style="border-radius: 5px ; margin-bottom: 7px"><a style="text-decoration: none ; color: lightskyblue" asp-action="Edit" asp-route-id="@todo.Id">Edit <i class="fa-solid fa-pen"></i></a></button>
         <form method="post" asp-action="Delete" asp-route-id="@todo.Id">
-            <button onclick="return confirm('U really wanna delete this todo ?');">Delete</button>
+            <button style="border-radius: 5px ; color: red ; margin-bottom: 7px"
+                 onclick="return confirm('U really wanna delete this todo ?');">Delete <i class="fa-solid fa-trash-can"></i></button>
         </form>
     </div>
 }
