@@ -4,7 +4,6 @@ using sessionTpDIP.Services;
 
 namespace sessionTpDIP.Controllers
 {
-    [TypeFilter(typeof(ThemeFilter))]
     public class ThemeController : Controller
     {
         private readonly IThemeService _IthemeService;
