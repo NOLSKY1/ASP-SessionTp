@@ -1,3 +1,4 @@
+using sessionTpDIP.Filters;
 using sessionTpDIP.Mappers;
 using sessionTpDIP.Persisters;
 using sessionTpDIP.Repositories;
@@ -12,7 +13,14 @@ builder.Services.AddScoped<TodoMapper>();
 builder.Services.AddScoped<SessionRepository>();
 builder.Services.AddScoped<ITodoService,TodoService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IThemeService, ThemeService>();
+builder.Services.AddScoped<CookieRepository>();
 builder.Services.AddScoped<UserMapper>();
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add(typeof(ThemeFilter));
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

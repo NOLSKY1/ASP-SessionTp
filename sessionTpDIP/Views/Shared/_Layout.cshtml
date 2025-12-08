@@ -1,4 +1,18 @@
-﻿<!DOCTYPE html>
+﻿@* @{
+    // i had this while working on the cookie tp (state management pdf )
+    string value = Context.Request.Cookies["theme"] ?? "light";
+    string textColor = (value == "dark") ? "text-white" : "text-dark";
+    string theme = (value == "dark") ? "bg-dark" : "bg-white";
+
+} *@
+@{
+    // using the theme we got from filter
+    var value = TempData["Theme"] as string ;
+    string textColor = (value == "dark") ? "text-light" : "text-dark";
+    string theme = (value == "dark") ? "bg-dark" : "bg-light";
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,7 +23,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/sessionTpDIP.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body class="@theme @textColor" >
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -31,6 +45,19 @@
                         </li>
                     </ul>
                 </div>
+                <form asp-action="Switch" asp-controller="Theme" method="post" >
+                    <button type="submit">
+                        @if(value == "dark")
+                        {
+                            <text>Light mode</text>
+                        }
+                        else
+                        {
+                            <text>Dark mode</text>
+                        }
+                    </button>
+                </form>
+
             </div>
         </nav>
     </header>
@@ -40,7 +67,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer ">
         <div class="container">
             &copy; 2025 - sessionTpDIP - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

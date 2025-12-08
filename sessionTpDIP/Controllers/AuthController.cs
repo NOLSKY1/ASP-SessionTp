@@ -5,6 +5,7 @@ using sessionTpDIP.ViewModels;
 
 namespace sessionTpDIP.Controllers
 {
+
     public class AuthController : Controller
     {
         private readonly IAuthService _authService;
