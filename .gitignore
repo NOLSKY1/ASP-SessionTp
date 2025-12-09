@@ -20,6 +20,3 @@ x86/
 # Visual Studio cache/options
 .vs/
 
-# Logs
-*.log
-Logs/

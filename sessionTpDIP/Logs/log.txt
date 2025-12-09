@@ -1,0 +1,69 @@
+﻿log at: 12/8/2025 6:16:41 PM , Controller used: Home , action done: Index  Method type: GET
+Last log at: 12/8/2025 6:16:41 PM , Controller used: Home , action done: Index  Method type: GET 
+********************************
+log at: 12/8/2025 6:16:51 PM , Controller used: Theme , action done: Switch  Method type: POST
+Last log at: 12/8/2025 6:16:51 PM , Controller used: Theme , action done: Switch  Method type: POST 
+********************************
+log at: 12/8/2025 6:16:51 PM , Controller used: Home , action done: Index  Method type: GET
+Last log at: 12/8/2025 6:16:51 PM , Controller used: Home , action done: Index  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:15 PM , Controller used: Home , action done: Index  Method type: GET
+Last log at: 12/9/2025 8:20:15 PM , Controller used: Home , action done: Index  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:17 PM , Controller used: Auth , action done: login  Method type: GET
+Last log at: 12/9/2025 8:20:17 PM , Controller used: Auth , action done: login  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:18 PM , Controller used: Theme , action done: Switch  Method type: POST
+Last log at: 12/9/2025 8:20:18 PM , Controller used: Theme , action done: Switch  Method type: POST 
+********************************
+log at: 12/9/2025 8:20:18 PM , Controller used: Home , action done: Index  Method type: GET
+Last log at: 12/9/2025 8:20:18 PM , Controller used: Home , action done: Index  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:19 PM , Controller used: Todo , action done: Index  Method type: GET
+Last log at: 12/9/2025 8:20:19 PM , Controller used: Todo , action done: Index  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:19 PM , Controller used: Auth , action done: login  Method type: GET
+Last log at: 12/9/2025 8:20:19 PM , Controller used: Auth , action done: login  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:19 PM , Controller used: Home , action done: Index  Method type: GET
+Last log at: 12/9/2025 8:20:19 PM , Controller used: Home , action done: Index  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:21 PM , Controller used: Home , action done: Privacy  Method type: GET
+Last log at: 12/9/2025 8:20:21 PM , Controller used: Home , action done: Privacy  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:22 PM , Controller used: Auth , action done: login  Method type: GET
+Last log at: 12/9/2025 8:20:22 PM , Controller used: Auth , action done: login  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:27 PM , Controller used: Auth , action done: login  Method type: POST
+Last log at: 12/9/2025 8:20:27 PM , Controller used: Auth , action done: login  Method type: POST 
+********************************
+log at: 12/9/2025 8:20:27 PM , Controller used: Todo , action done: Index  Method type: GET
+Last log at: 12/9/2025 8:20:27 PM , Controller used: Todo , action done: Index  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:28 PM , Controller used: Todo , action done: Create  Method type: GET
+Last log at: 12/9/2025 8:20:28 PM , Controller used: Todo , action done: Create  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:33 PM , Controller used: Todo , action done: Create  Method type: POST
+Last log at: 12/9/2025 8:20:33 PM , Controller used: Todo , action done: Create  Method type: POST 
+********************************
+log at: 12/9/2025 8:20:33 PM , Controller used: Todo , action done: Index  Method type: GET
+Last log at: 12/9/2025 8:20:33 PM , Controller used: Todo , action done: Index  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:34 PM , Controller used: Todo , action done: Edit  Method type: GET
+Last log at: 12/9/2025 8:20:34 PM , Controller used: Todo , action done: Edit  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:38 PM , Controller used: Todo , action done: Edit  Method type: POST
+Last log at: 12/9/2025 8:20:38 PM , Controller used: Todo , action done: Edit  Method type: POST 
+********************************
+log at: 12/9/2025 8:20:38 PM , Controller used: Todo , action done: Index  Method type: GET
+Last log at: 12/9/2025 8:20:38 PM , Controller used: Todo , action done: Index  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:40 PM , Controller used: Todo , action done: Edit  Method type: GET
+Last log at: 12/9/2025 8:20:40 PM , Controller used: Todo , action done: Edit  Method type: GET 
+********************************
+log at: 12/9/2025 8:20:42 PM , Controller used: Todo , action done: Edit  Method type: POST
+Last log at: 12/9/2025 8:20:42 PM , Controller used: Todo , action done: Edit  Method type: POST 
+********************************
+log at: 12/9/2025 8:20:42 PM , Controller used: Todo , action done: Index  Method type: GET
+Last log at: 12/9/2025 8:20:42 PM , Controller used: Todo , action done: Index  Method type: GET 
+********************************
