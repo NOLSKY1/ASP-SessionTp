@@ -1,9 +1,0 @@
-﻿log at: 12/8/2025 6:16:41 PM , Controller used: Home , action done: Index  Method type: GET
-Last log at: 12/8/2025 6:16:41 PM , Controller used: Home , action done: Index  Method type: GET 
-********************************
-log at: 12/8/2025 6:16:51 PM , Controller used: Theme , action done: Switch  Method type: POST
-Last log at: 12/8/2025 6:16:51 PM , Controller used: Theme , action done: Switch  Method type: POST 
-********************************
-log at: 12/8/2025 6:16:51 PM , Controller used: Home , action done: Index  Method type: GET
-Last log at: 12/8/2025 6:16:51 PM , Controller used: Home , action done: Index  Method type: GET 
-********************************
